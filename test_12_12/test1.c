@@ -16,7 +16,22 @@ int main(void)
     int right = n - 1, left = 0;
     int mid = (right + left) / 2;
 
+    while (left <= right)
+    {
+        if (number > arr[mid])
+        {
+            left = mid + 1;
+            mid = (left + right) / 2;
+        }
+        else if (number < arr[mid])
+        {
+            right = mid - 1;
+            mid = (left + right) / 2;
+        }
+        else
+        {
 
-    /*********End**********/
+        }
+    }
     return 0;
 }
